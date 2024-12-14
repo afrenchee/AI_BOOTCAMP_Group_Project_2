@@ -3,8 +3,7 @@
 
 ## Project Overview
 
-This project aims to predict Federal Reserve interest rate movements (increase, decrease, or no change) using trends in consumer spending, specifically Personal Consumption Expenditures (PCE). By analyzing the relationship between consumer spending patterns and monetary policy decisions, our model seeks to provide actionable insights into economic indicators that influence Federal Reserve rate adjustments. This information can be valuable for mortgage lending, bond investing, and other financial decision-making processes.
-
+This project aims to predict Federal Reserve interest rate movements (increase, decrease, or no change) using trends in consumer spending, specifically Personal Consumption Expenditures (PCE). By analyzing the relationship between consumer spending patterns and monetary policy decisions, our model seeks to provide actionable insights into economic indicators that influence Federal Reserve rate adjustments. This information can be valuable for mortgage lending, bond investing, and other financial decision...
 ## Project Objectives
 - **Can PCE lead to predictions of the Federal Reserve interest rates?**
 - **Which features present the strongest correlation between consumer expenditures and the Federal Reserve rate?**
@@ -12,7 +11,7 @@ This project aims to predict Federal Reserve interest rate movements (increase, 
 
 ## Datasets
 The project utilizes two primary datasets:
-1. [Personal Consumption Expenditures](https://apps.bea.gov/) (PCE) by month (1959-2024 November).
+1. [Personal Consumption Expenditures](https://osuvirtaipt08-6bk3810.slack.com/archives/C083E88FB60/p1734190202376789) (PCE) by month (1959-2024 November).
 2. [Federal Reserve Rate](https://fred.stlouisfed.org/series/FEDFUNDS) history by month.
 
 Both datasets were reviewed to ensure sufficient data for training the model, and accessible APIs were confirmed for data retrieval.
@@ -40,7 +39,7 @@ Both datasets were reviewed to ensure sufficient data for training the model, an
 - **Python Libraries:** Pandas, NumPy, SciKit-Learn, XGBoost.
 - **APIs:**
   - FRED API: [FRED API Documentation](https://fred.stlouisfed.org/docs/api/fred/series.html#series_id)
-  - BEA API: [BEA API Documentation](https://apps.bea.gov/) (Link placeholder to be updated).
+  - BEA API: [BEA API Documentation](https://osuvirtaipt08-6bk3810.slack.com/archives/C083E88FB60/p1734190202376789).
 
 ## Results
 The project focuses on answering the following:
@@ -74,6 +73,7 @@ The project focuses on answering the following:
 - Johnathan Marsh
 - Nathan Brown
 
+
 ## Repository Structure
 - **`/data`:** Contains raw and cleaned datasets.
 - **`/notebooks`:** Includes Jupyter Notebooks for data exploration, cleaning, and model training.
@@ -81,6 +81,7 @@ The project focuses on answering the following:
 - **`/results`:** Stores model outputs and evaluation metrics.
 - **`README.md`:** Documentation of the project.
 
----
+## Data Attribution
+- **FRED API:** Data used in this project was sourced from the Federal Reserve Economic Data (FRED) API, provided by the Federal Reserve Bank of St. Louis. [Terms of Use](https://fred.stlouisfed.org/docs/api/terms_of_use.html)
+- **BEA API:** Data used in this project was sourced from the U.S. Bureau of Economic Analysis (BEA) API. [Terms of Use](https://apps.bea.gov/API/signup/index.cfm)
 
-**Note:** This project is part of the OSU AI Bootcamp and adheres to the guidelines provided in the project rubric.
