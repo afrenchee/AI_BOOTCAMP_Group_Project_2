@@ -6,7 +6,7 @@
 This project aims to predict Federal Reserve interest rate movements (increase, decrease, or no change) using trends in consumer spending, specifically Personal Consumption Expenditures (PCE). By analyzing the relationship between consumer spending patterns and monetary policy decisions, our model seeks to provide actionable insights into economic indicators that influence Federal Reserve rate adjustments. This information can be valuable for mortgage lending, bond investing, and other financial decision...
 ## Project Objectives
 - **Can PCE lead to predictions of the Federal Reserve interest rates?**
-- **Which optimization model ad the best accuracy score?**
+- **Which optimization model had the best accuracy score?**
 - **How can predicting Federal Reserve rate movements benefit consumers and businesses?**
 
 ## Datasets
