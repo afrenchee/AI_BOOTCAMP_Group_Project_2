@@ -31,7 +31,7 @@ Both datasets were reviewed to ensure sufficient data for training the model, an
 1. Standard Deviation Classification.
 2. Model Optimization:
    - Random Forest Model.
-   - Grid Search CV (parameters: `min_sample_split`, `min_sample_leaf`, `min_weight_fraction_leaf`).
+   - Grid Search CV (hyperparameters: `min_sample_split`, `min_sample_leaf`, `min_weight_fraction_leaf`).
    - Extreme Gradient Boosting (XGBoost).
 3. Time Series Analysis for better performance.
 
@@ -79,10 +79,11 @@ The ability to predict movements in Federal Reserve interest rates can help indi
 
 
 ## Repository Structure
-- **`/data`:** Contains raw and cleaned datasets.
-- **`/notebooks`:** Includes Jupyter Notebooks for data exploration, cleaning, and model training.
-- **`/scripts`:** Python scripts for model training and evaluation.
-- **`/results`:** Stores model outputs and evaluation metrics.
+- **`/main`:** Contains final versions of notebooks and files.
+- **`/data-cleaning`:** Contains raw and cleaned datasets.
+- **`/api`:** Includes notebook and files for utilizing the API functions.
+- **`/model`:** Python scripts for model training and evaluation.
+- **`/raw-data`:** Stores the initial data associated with the project start date.
 - **`README.md`:** Documentation of the project.
 
 ## Data Attribution
