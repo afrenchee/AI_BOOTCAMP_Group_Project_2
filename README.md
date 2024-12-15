@@ -46,10 +46,11 @@ The project focuses on answering the following:
 1. **Can PCE lead to predictions of the Federal Reserve interest rates?**
 PCE in conjunction with the Consumer Price Index(CPI) and inflation rate are commonly referenced in Federal Reserve interest rate adjustments.
 
-3. **Which model performed the highest in predicting the federal rate movement.**
+2. **Which model performed the highest in predicting the federal rate movement.**
 ![Model Performance Comparison](Graphs/ModelGraph.png)
-4. **How can predicting Federal Reserve rate movements benefit consumers and businesses?**
-   - [Chart Placeholder]
+
+3. **How can predicting Federal Reserve rate movements benefit consumers and businesses?**
+The ability to predict movements in Federal Reserve interest rates can help individuals secure favorable loan and mortgage rates before potential increases, saving significant costs over time. For companies, it enables better financial planning, such as optimizing borrowing strategies and adjusting investment decisions to mitigate risks. Investors can use these predictions to anticipate market shifts, make informed decisions on bonds, stocks, and other assets, and capitalize on opportunities influenced by changing interest rates.
 
 ## Challenges Encountered
 1. **Feature Scaling:**
