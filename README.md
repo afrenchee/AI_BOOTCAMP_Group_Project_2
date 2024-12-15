@@ -45,7 +45,7 @@ Both datasets were reviewed to ensure sufficient data for training the model, an
 The project focuses on answering the following:
 1. **Can PCE lead to predictions of the Federal Reserve interest rates?**
    - [Chart Placeholder]
-2. **Which features present the strongest correlation between consumer expenditures and the Federal Reserve rate?**
+2. **Which model performed the highest in predicting the federal rate movement.**
 ![Model Performance Comparison](Graphs/ModelGraph.png)
 3. **How can predicting Federal Reserve rate movements benefit consumers and businesses?**
    - [Chart Placeholder]
