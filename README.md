@@ -11,7 +11,7 @@ This project aims to predict Federal Reserve interest rate movements (increase, 
 
 ## Datasets
 The project utilizes two primary datasets:
-1. [Personal Consumption Expenditures](https://osuvirtaipt08-6bk3810.slack.com/archives/C083E88FB60/p1734190202376789) (PCE) by month (1959-2024 November).
+1. [Personal Consumption Expenditures](https://osuvirtaipt08-6bk3810.slack.com/archives/C083E88FB60/p1734190202376789) (PCE) by month (1959-2024 October).
 2. [Federal Reserve Rate](https://fred.stlouisfed.org/series/FEDFUNDS) history by month.
 
 Both datasets were reviewed to ensure sufficient data for training the model, and accessible APIs were confirmed for data retrieval.
@@ -82,7 +82,7 @@ The ability to predict movements in Federal Reserve interest rates can help indi
 - **`/main`:** Contains final versions of notebooks and files.
 - **`/data-cleaning`:** Contains raw and cleaned datasets.
 - **`/api`:** Includes notebook and files for utilizing the API functions.
-- **`/model`:** Python scripts for model training and evaluation.
+- **`/model`:** Python scripts for model training, evaluation, and optimization.
 - **`/raw-data`:** Stores the initial data associated with the project start date.
 - **`README.md`:** Documentation of the project.
 
