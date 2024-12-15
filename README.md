@@ -60,6 +60,8 @@ PCE in conjunction with the Consumer Price Index(CPI) and inflation rate are com
    - API calls returned more data than the downloaded dataset.
 4. **Dataset Size Limitations:**
    - Smaller datasets restricted the ability to use larger `n-estimator` values and sample splits.
+5. **Outliers**
+   - The Fed Rate outliers for the 1980’s caused variations of up to 5% on our optimization accuracy scores when running the model multiple times.
 
 ## Future Considerations
 - Explore additional predictors to enhance model accuracy.
