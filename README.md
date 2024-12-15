@@ -44,7 +44,7 @@ Both datasets were reviewed to ensure sufficient data for training the model, an
 ## Results
 The project focuses on answering the following:
 1. **Can PCE lead to predictions of the Federal Reserve interest rates?**
-   - [Chart Placeholder]
+PCE in conjunction with the Consumer Price Index(CPI) and inflation rate are commonly referenced in Federal Reserve interest rate adjustments.
 2. **Which model performed the highest in predicting the federal rate movement.**
 ![Model Performance Comparison](Graphs/ModelGraph.png)
 3. **How can predicting Federal Reserve rate movements benefit consumers and businesses?**
