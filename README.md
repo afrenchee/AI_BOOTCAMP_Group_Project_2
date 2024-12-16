@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-This project aims to predict Federal Reserve interest rate movements (increase, decrease, or no change) using trends in consumer spending, specifically Personal Consumption Expenditures (PCE). By analyzing the relationship between consumer spending patterns and monetary policy decisions, our model seeks to provide actionable insights into economic indicators that influence Federal Reserve rate adjustments. This information can be valuable for mortgage lending, bond investing, and other financial decision...
+This project aims to predict Federal Reserve interest rate movements (increase, decrease, or no change) using trends in consumer spending, specifically Personal Consumption Expenditures (PCE). By analyzing the relationship between consumer spending patterns and monetary policy decisions, our model seeks to provide actionable insights into economic indicators that influence Federal Reserve rate adjustments. This information can be valuable for mortgage lending, bond investing, and other financial decision.
 ## Project Objectives
 - **Can PCE lead to predictions of the Federal Reserve interest rates?**
 - **Which optimization model had the best accuracy score?**
@@ -11,7 +11,7 @@ This project aims to predict Federal Reserve interest rate movements (increase, 
 
 ## Datasets
 The project utilizes two primary datasets:
-1. [Personal Consumption Expenditures](https://osuvirtaipt08-6bk3810.slack.com/archives/C083E88FB60/p1734190202376789) (PCE) by month (1959-2024 November).
+1. [Personal Consumption Expenditures](https://osuvirtaipt08-6bk3810.slack.com/archives/C083E88FB60/p1734190202376789) (PCE) by month (1959-2024 October).
 2. [Federal Reserve Rate](https://fred.stlouisfed.org/series/FEDFUNDS) history by month.
 
 Both datasets were reviewed to ensure sufficient data for training the model, and accessible APIs were confirmed for data retrieval.
@@ -31,7 +31,7 @@ Both datasets were reviewed to ensure sufficient data for training the model, an
 1. Standard Deviation Classification.
 2. Model Optimization:
    - Random Forest Model.
-   - Grid Search CV (parameters: `min_sample_split`, `min_sample_leaf`, `min_weight_fraction_leaf`).
+   - Grid Search CV (hyperparameters: `min_sample_split`, `min_sample_leaf`, `min_weight_fraction_leaf`).
    - Extreme Gradient Boosting (XGBoost).
 3. Time Series Analysis for better performance.
 
@@ -44,11 +44,13 @@ Both datasets were reviewed to ensure sufficient data for training the model, an
 ## Results
 The project focuses on answering the following:
 1. **Can PCE lead to predictions of the Federal Reserve interest rates?**
-   - [Chart Placeholder]
-2. **Which features present the strongest correlation between consumer expenditures and the Federal Reserve rate?**
-   - [Chart Placeholder]
+PCE in conjunction with the Consumer Price Index(CPI) and inflation rate are commonly referenced in Federal Reserve interest rate adjustments.
+
+2. **Which model performed the highest in predicting the federal rate movement.**
+![Model Performance Comparison](Graphs/ModelGraph.png)
+
 3. **How can predicting Federal Reserve rate movements benefit consumers and businesses?**
-   - [Chart Placeholder]
+The ability to predict movements in Federal Reserve interest rates can help individuals secure favorable loan and mortgage rates before potential increases, saving significant costs over time. For companies, it enables better financial planning, such as optimizing borrowing strategies and adjusting investment decisions to mitigate risks. Investors can use these predictions to anticipate market shifts, make informed decisions on bonds, stocks, and other assets, and capitalize on opportunities influenced by changing interest rates.
 
 ## Challenges Encountered
 1. **Feature Scaling:**
@@ -59,6 +61,8 @@ The project focuses on answering the following:
    - API calls returned more data than the downloaded dataset.
 4. **Dataset Size Limitations:**
    - Smaller datasets restricted the ability to use larger `n-estimator` values and sample splits.
+5. **Outliers**
+   - The Fed Rate outliers for the 1980’s caused variations of up to 5% on our optimization accuracy scores when running the model multiple times.
 
 ## Future Considerations
 - Explore additional predictors to enhance model accuracy.
@@ -75,10 +79,11 @@ The project focuses on answering the following:
 
 
 ## Repository Structure
-- **`/data`:** Contains raw and cleaned datasets.
-- **`/notebooks`:** Includes Jupyter Notebooks for data exploration, cleaning, and model training.
-- **`/scripts`:** Python scripts for model training and evaluation.
-- **`/results`:** Stores model outputs and evaluation metrics.
+- **`/main`:** Contains final versions of notebooks and files.
+- **`/data-cleaning`:** Contains raw and cleaned datasets.
+- **`/api`:** Includes notebook and files for utilizing the API functions.
+- **`/model`:** Python scripts for model training, evaluation, and optimization.
+- **`/raw-data`:** Stores the initial data associated with the project start date.
 - **`README.md`:** Documentation of the project.
 
 ## Data Attribution
